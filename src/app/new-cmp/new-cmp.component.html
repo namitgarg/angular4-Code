@@ -1,0 +1,14 @@
+<div> Months :
+   <select id="months" class="dropdown-for-months" [(ngModel)]="selectedOption" (change) = "changemonths($event)" >
+      <option *ngFor="let i of months">{{i}}</option>
+   </select>
+</div>
+<p>Selected option: {{ selectedOption }}</p>
+<div>
+   <span *ngIf="isavailable; then condition1 else condition2">Condition is valid.</span>
+   <ng-template #condition1>Condition is valid</ng-template>
+   <ng-template #condition2>Condition is invalid</ng-template>
+</div>
+<button (click)="myClickFunction($event)">
+   Click Me
+</button>

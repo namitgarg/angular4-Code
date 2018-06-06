@@ -1,0 +1,12 @@
+header {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+    background: purple;
+    color:white;
+}
+header h1 {
+    text-align: center;
+}
