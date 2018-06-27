@@ -1,4 +1,7 @@
 <h3>This is home page content </h3>
 
 <p> home page content body</p>
-{{todaydate}}
+<!-- parent to hild communication -->
+<!-- homeSignUpTitle is the variable that belongs to child compoenent -->
+<!-- title is variable called from homepagecomppnent.ts (parent compenent) -->
+<app-signup-form [homeSignUpTitle]="title"></app-signup-form>

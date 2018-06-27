@@ -10,7 +10,7 @@ import { CapitalizePipe } from './capitalize.pipe'; // import our pipe here
 import { Sqrt } from './pipelearn/sqrt.pipe';
 import { RoutelearnComponent } from './routelearn/routelearn.component';
 import { HeaderComponent } from './header/header.component'; // import our pipe here
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module'; // call routing 
 import { FooterComponent } from './footer/footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';

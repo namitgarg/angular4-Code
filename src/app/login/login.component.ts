@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MyserviceService } from '../myservice.service';
+import { Observable,Subject,Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -14,10 +15,10 @@ title = 'Angular 4 Project!';
    email:string;
    constructor(private myservice: MyserviceService) { }
    ngOnInit() {
-      this.todaydate = this.myservice.showTodayDate();
+
    }
    onClickSubmit(data) {
       this.email=data.emailid;
+      this.myservice.setUrlHistoryObj(data.emailid);
    }
-
 }
