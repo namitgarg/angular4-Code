@@ -18,5 +18,6 @@ export class ClientTestimonialsComponent implements OnInit {
                         console.log(data[0]);
         });
   }
+   message = 'Hola Namit!';
 
 }

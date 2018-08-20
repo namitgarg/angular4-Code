@@ -1,16 +1,19 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild, AfterViewInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {HttpErrorResponse} from '@angular/common/http';
+import {ClientTestimonialsComponent} from '../client-testimonials/client-testimonials.component';
 
 @Component({
     selector: 'app-about-us',
     templateUrl: './about-us.component.html',
     styleUrls: ['./about-us.component.css']
 })
-export class AboutUsComponent implements OnInit {
+export class AboutUsComponent implements OnInit, AfterViewInit {
     userName: string;
     bio: string;
     company: string;
+
+    @ViewChild(ClientTestimonialsComponent) child;
     constructor(private http: HttpClient) {
     }
     ngOnInit() {
@@ -33,6 +36,11 @@ export class AboutUsComponent implements OnInit {
             }
         );
 
+    }
+    message: string;
+
+    ngAfterViewInit() {
+        this.message = this.child.message
     }
 
 }

@@ -1,7 +1,9 @@
 <h3>This is home page content </h3>
 
+ <button type="button" (click)="changeTitle()" >Change title</button>
 <p> home page content body</p>
 <!-- parent to hild communication -->
 <!-- homeSignUpTitle is the variable that belongs to child compoenent -->
 <!-- title is variable called from homepagecomppnent.ts (parent compenent) -->
 <app-signup-form [homeSignUpTitle]="title"></app-signup-form>
+

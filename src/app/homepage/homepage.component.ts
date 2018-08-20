@@ -9,12 +9,16 @@ import { Subscription } from 'rxjs';
     
 })
 export class HomepageComponent implements OnInit {
-    title = 'Angular 4 sProject!';
+    title = 'my Project!';
     todaydate;
     userName:string ='Namit Garg'
     constructor(private myservice: MyserviceService) {
     }
     ngOnInit() {
+    }
+    changeTitle(){
+        this.title="Changed title in Child Component Also";
+        
     }
 
 }
