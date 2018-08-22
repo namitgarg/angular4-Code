@@ -9,6 +9,10 @@ import { ProductsComponent } from './products/products.component';
 import { ClientTestimonialsComponent } from './client-testimonials/client-testimonials.component';
 import { LoginComponent } from './login/login.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
+import { ParentComponent } from './parent/parent.component';
+import { Parent2Component } from './parent2/parent2.component';
+import { ParentEComponent } from './parent-e/parent-e.component';
+
 
 
 const routes: Routes = [
@@ -40,6 +44,18 @@ const routes: Routes = [
     {
         path: 'sign-up',
         component: SignupFormComponent
+    },
+       {
+        path: 'parent',
+        component: ParentComponent
+    },
+       {
+        path: 'parent2',
+        component: Parent2Component
+    },
+       {
+        path: 'parente',
+        component: ParentEComponent
     },
 ];
 

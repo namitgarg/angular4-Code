@@ -23,6 +23,12 @@ import { ClientTestimonialsComponent } from './client-testimonials/client-testim
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SignupFormComponent } from './signup-form/signup-form.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { Child2Component } from './child2/child2.component';
+import { Parent2Component } from './parent2/parent2.component';
+import { ParentEComponent } from './parent-e/parent-e.component';
+import { ChildEComponent } from './child-e/child-e.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +48,12 @@ import { SignupFormComponent } from './signup-form/signup-form.component';
     ClientTestimonialsComponent,
     LoginComponent,
     SignupFormComponent,
+    ParentComponent,
+    ChildComponent,
+    Child2Component,
+    Parent2Component,
+    ParentEComponent,
+    ChildEComponent,
   ],
   imports: [
     BrowserModule,
