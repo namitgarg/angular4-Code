@@ -12,6 +12,7 @@ import { SignupFormComponent } from './signup-form/signup-form.component';
 import { ParentComponent } from './parent/parent.component';
 import { Parent2Component } from './parent2/parent2.component';
 import { ParentEComponent } from './parent-e/parent-e.component';
+import { UserComponent } from './user/user.component';
 
 
 
@@ -57,6 +58,10 @@ const routes: Routes = [
         path: 'parente',
         component: ParentEComponent
     },
+    {
+        path:'user/:id/:name',
+        component: UserComponent
+    }
 ];
 
 @NgModule({

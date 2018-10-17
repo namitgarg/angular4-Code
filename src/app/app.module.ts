@@ -29,6 +29,9 @@ import { Child2Component } from './child2/child2.component';
 import { Parent2Component } from './parent2/parent2.component';
 import { ParentEComponent } from './parent-e/parent-e.component';
 import { ChildEComponent } from './child-e/child-e.component';
+import { EventComponent } from './event/event.component';
+import { BetterhighlightDirective } from './better-highlight/betterhighlight.directive';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +57,9 @@ import { ChildEComponent } from './child-e/child-e.component';
     Parent2Component,
     ParentEComponent,
     ChildEComponent,
+    EventComponent,
+    BetterhighlightDirective,
+    UserComponent,
   ],
   imports: [
     BrowserModule,

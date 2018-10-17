@@ -10,9 +10,13 @@ export class ParentEComponent implements OnInit {
 
   message:string;
 
+ngOnInit(){
+    
+}
   receiveMessage($event) {
     this.message = $event
     console.log("Sasas");
+    console.log($event);
   }
 
 }

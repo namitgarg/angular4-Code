@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './parent.component.html',
 })
 export class ParentComponent implements OnInit {
- parentMessage = "message   from parent"
+ parentMessage = "message from parent"
   constructor() { }
 
   ngOnInit() {

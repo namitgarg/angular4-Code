@@ -10,5 +10,10 @@ export class Child2Component implements OnInit {
 
   ngOnInit() {
   }
+  
+  setFirstName(InputFirstName){
+      console.log(InputFirstName);
+      console.log("value is "+InputFirstName.value);
+  }
 
 }

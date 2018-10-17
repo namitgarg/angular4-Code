@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit,ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-parent2',
@@ -10,10 +10,14 @@ export class Parent2Component implements OnInit {
   }
   @ViewChild('title')
   title: ElementRef;
+  @ViewChild('firstName') firstName:ElementRef
 
   ngAfterViewInit() {
     console.log('Values on ngAfterViewInit():');
     console.log("title:", this.title.nativeElement);
   }
 
+getFirstName(){
+    console.log("from parent"+this.firstName);
+}
 }

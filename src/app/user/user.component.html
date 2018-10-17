@@ -1,0 +1,7 @@
+<h4> user id is {{user.id}}</h4>
+<h5>user name is {{user.name}}</h5>
+
+<a [routerLink] = "['/user',2,'rahul']"
+   [queryParams]="{age:23}"
+   fragment="hasvalue">
+   Contact</a>
